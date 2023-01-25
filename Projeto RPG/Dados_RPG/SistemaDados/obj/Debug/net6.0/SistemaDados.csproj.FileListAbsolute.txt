@@ -1,0 +1,15 @@
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\bin\Debug\net6.0\SistemaDados.exe
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\bin\Debug\net6.0\SistemaDados.deps.json
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\bin\Debug\net6.0\SistemaDados.runtimeconfig.json
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\bin\Debug\net6.0\SistemaDados.dll
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\bin\Debug\net6.0\SistemaDados.pdb
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\obj\Debug\net6.0\SistemaDados.csproj.AssemblyReference.cache
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\obj\Debug\net6.0\SistemaDados.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\obj\Debug\net6.0\SistemaDados.AssemblyInfoInputs.cache
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\obj\Debug\net6.0\SistemaDados.AssemblyInfo.cs
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\obj\Debug\net6.0\SistemaDados.csproj.CoreCompileInputs.cache
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\obj\Debug\net6.0\SistemaDados.dll
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\obj\Debug\net6.0\refint\SistemaDados.dll
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\obj\Debug\net6.0\SistemaDados.pdb
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\obj\Debug\net6.0\SistemaDados.genruntimeconfig.cache
+C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDados\obj\Debug\net6.0\ref\SistemaDados.dll
