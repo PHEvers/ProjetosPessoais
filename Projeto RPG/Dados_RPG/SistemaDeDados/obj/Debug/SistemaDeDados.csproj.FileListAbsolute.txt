@@ -6,3 +6,11 @@ C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\bin\Debug\SistemaDeDado
 C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\bin\Debug\SistemaDeDados.pdb
 C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\obj\Debug\SistemaDeDados.exe
 C:\DEV2BLU\Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\obj\Debug\SistemaDeDados.pdb
+C:\DEV2BLU\Projetos Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\bin\Debug\SistemaDeDados.exe
+C:\DEV2BLU\Projetos Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\bin\Debug\SistemaDeDados.exe.config
+C:\DEV2BLU\Projetos Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\obj\Debug\SistemaDeDados.csproj.AssemblyReference.cache
+C:\DEV2BLU\Projetos Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\obj\Debug\SistemaDeDados.csproj.SuggestedBindingRedirects.cache
+C:\DEV2BLU\Projetos Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\obj\Debug\SistemaDeDados.csproj.CoreCompileInputs.cache
+C:\DEV2BLU\Projetos Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\obj\Debug\SistemaDeDados.exe
+C:\DEV2BLU\Projetos Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\obj\Debug\SistemaDeDados.pdb
+C:\DEV2BLU\Projetos Pessoais\Projeto RPG\Dados_RPG\SistemaDeDados\bin\Debug\SistemaDeDados.pdb

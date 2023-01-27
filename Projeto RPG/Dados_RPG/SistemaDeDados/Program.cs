@@ -26,6 +26,7 @@ namespace SistemaDeDados
                 {
 
                     case 1:
+                        Console.Clear();
                         ListaDeDados.Add(NovosDados());
                         break;
                     case 2:
@@ -43,10 +44,12 @@ namespace SistemaDeDados
             int menuSecundario;
             int numeroSorteado;
             string str;
+                
 
             Dados dados = new Dados();
             do
             {
+
                 Console.WriteLine("");
                 Console.WriteLine("     Opcoes de dados");
                 Console.WriteLine("   2 - Dado de   2 Faces");
@@ -60,6 +63,7 @@ namespace SistemaDeDados
                 Console.WriteLine("   0 - Para sair");
                 str = Console.ReadLine();
                 Int32.TryParse(str, out menuSecundario);
+                Console.Clear();
                 switch (menuSecundario)
                 {
 
