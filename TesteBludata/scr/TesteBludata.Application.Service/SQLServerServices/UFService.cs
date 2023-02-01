@@ -19,28 +19,26 @@ namespace TesteBludata.Application.Service.SQLServerServices
         }
         public Task<int> Creat(UFDTO entity)
         {
-            if (entity.id > 0)
-            {
-                return _repository.Update(entity.mapToEntity());
-            }
-            else
-            {
-                return _repository.Save(entity.mapToEntity());
-            }
-        }
-
-        public Task<int> Delete(int id)
-        {
+            // Já foram criados todos os estados em namespace TesteDatablu.Infra.Data.Context
             throw new NotImplementedException();
         }
-
         public List<UFDTO> ReadAll()
         {
-            throw new NotImplementedException();
+            return _repository.ReadAll()
+                               .Select(c => new UFDTO()
+                               {
+                                   id = c.Id,
+                                   nome = c.Nome
+                               }).ToList();
         }
-
-        public Task<UFDTO> ReadById(int id)
+        public async Task<UFDTO> ReadById(int id)
         {
+            var dto = new UFDTO();
+            return dto.mapToDTO(await _repository.ReadById(id));
+        }
+        public Task<int> Delete(int id)
+        {
+            // também não precisa implementar, não será possivel excluir nenhum estado.
             throw new NotImplementedException();
         }
     }

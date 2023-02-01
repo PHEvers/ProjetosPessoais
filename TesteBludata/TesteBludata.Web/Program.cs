@@ -18,7 +18,7 @@ builder.Services.AddDbContext<SQLServerContext>
 // ### Dependency Injection
 // # Repositories
 builder.Services.AddScoped<IEmpresaRepository, EmpresaRepository>();
-builder.Services.AddScoped<IFornecedorRepository, FornecederRepository>();
+builder.Services.AddScoped<IFornecedorRepository, FornecedorRepository>();
 builder.Services.AddScoped<IUFRepository, UFRepository>();
 
 // # Services

@@ -8,7 +8,8 @@ namespace TesteBludata.Domain.Entities
 {
     public class Empresa
     {
-        public string UF { get; set; }
+        public int Id { get; set; }
+        public UF Uf { get; set; }
         public string NomeFantasia { get; set; }
         public string EmpesaCNPJ { get; set; }
     }

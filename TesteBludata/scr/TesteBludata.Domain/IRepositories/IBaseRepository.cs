@@ -10,7 +10,7 @@ namespace RevisaoProjetoNoticias.Domain.IRepositories
     {
         Task<int> Create(T entity);
         Task<T> ReadById(int id);
-        IQueryable<T> ReadByAll();
+        IQueryable<T> ReadAll();
         Task<int> Update(T entity);
         Task<int> Delete(T entity);
     }
