@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "48fkBl2slsSyxtLqo3YdQ5U55uEMExSs48EPZl3Ui3TbtY4WUd/2n776GDzr2USIhhbEwB9Jtzz7DsLE2HmOuw==",
+  "dgSpecHash": "ohBkP4EMnIUJsOFeXhgHLH497YgRY/8fRF9OaBFjcBuPcSklAkJNLkGtbms4oD5/mDNY4MSIGhJGvBgL4RxHOg==",
   "success": true,
-  "projectFilePath": "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\TesteBludata.Web\\TesteBludata.Web.csproj",
+  "projectFilePath": "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\TesteBludata.web\\TesteBludata.web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

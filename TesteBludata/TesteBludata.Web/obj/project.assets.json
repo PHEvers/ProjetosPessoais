@@ -2262,6 +2262,45 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "TesteBludata.Application.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "TesteBludata.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TesteBludata.Application.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TesteBludata.Application.Service.dll": {}
+        }
+      },
+      "TesteBludata.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/TesteBludata.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TesteBludata.Domain.dll": {}
+        }
+      },
+      "TesteBludata.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6",
+          "TesteBludata.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TesteBludata.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TesteBludata.Infra.Data.dll": {}
+        }
       }
     }
   },
@@ -7223,6 +7262,21 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "TesteBludata.Application.Service/1.0.0": {
+      "type": "project",
+      "path": "../scr/TesteBludata.Application.Service/TesteBludata.Application.Service.csproj",
+      "msbuildProject": "../scr/TesteBludata.Application.Service/TesteBludata.Application.Service.csproj"
+    },
+    "TesteBludata.Domain/1.0.0": {
+      "type": "project",
+      "path": "../scr/TesteBludata.Domain/TesteBludata.Domain.csproj",
+      "msbuildProject": "../scr/TesteBludata.Domain/TesteBludata.Domain.csproj"
+    },
+    "TesteBludata.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../scr/TesteDatablu.Infra.Data/TesteBludata.Infra.Data.csproj",
+      "msbuildProject": "../scr/TesteDatablu.Infra.Data/TesteBludata.Infra.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7230,7 +7284,10 @@
       "Microsoft.EntityFrameworkCore >= 7.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.1.6",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.2"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
+      "TesteBludata.Application.Service >= 1.0.0",
+      "TesteBludata.Domain >= 1.0.0",
+      "TesteBludata.Infra.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7240,11 +7297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\TesteBludata.Web\\TesteBludata.Web.csproj",
-      "projectName": "TesteBludata.Web",
-      "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\TesteBludata.Web\\TesteBludata.Web.csproj",
+      "projectUniqueName": "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\TesteBludata.web\\TesteBludata.web.csproj",
+      "projectName": "TesteBludata.web",
+      "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\TesteBludata.web\\TesteBludata.web.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\TesteBludata.Web\\obj\\",
+      "outputPath": "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\TesteBludata.web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7265,7 +7322,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\scr\\TesteBludata.Application.Service\\TesteBludata.Application.Service.csproj": {
+              "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\scr\\TesteBludata.Application.Service\\TesteBludata.Application.Service.csproj"
+            },
+            "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\scr\\TesteBludata.Domain\\TesteBludata.Domain.csproj": {
+              "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\scr\\TesteBludata.Domain\\TesteBludata.Domain.csproj"
+            },
+            "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\scr\\TesteDatablu.Infra.Data\\TesteBludata.Infra.Data.csproj": {
+              "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\TesteBludata\\scr\\TesteDatablu.Infra.Data\\TesteBludata.Infra.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

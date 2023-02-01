@@ -1,0 +1,8 @@
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.web\obj\Debug\net6.0\TesteBludata.web.csproj.AssemblyReference.cache
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.web\obj\Debug\net6.0\TesteBludata.web.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.web\obj\Debug\net6.0\TesteBludata.web.AssemblyInfoInputs.cache
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.web\obj\Debug\net6.0\TesteBludata.web.AssemblyInfo.cs
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.web\obj\Debug\net6.0\TesteBludata.web.csproj.CoreCompileInputs.cache
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.web\obj\Debug\net6.0\TesteBludata.web.MvcApplicationPartsAssemblyInfo.cache
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.web\obj\Debug\net6.0\TesteBludata.web.RazorAssemblyInfo.cache
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.web\obj\Debug\net6.0\TesteBludata.web.RazorAssemblyInfo.cs

@@ -1,0 +1,5 @@
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\scr\TesteBludata.Application.Service\obj\Debug\net6.0\TesteBludata.Application.Service.csproj.AssemblyReference.cache
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\scr\TesteBludata.Application.Service\obj\Debug\net6.0\TesteBludata.Application.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\scr\TesteBludata.Application.Service\obj\Debug\net6.0\TesteBludata.Application.Service.AssemblyInfoInputs.cache
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\scr\TesteBludata.Application.Service\obj\Debug\net6.0\TesteBludata.Application.Service.AssemblyInfo.cs
+C:\DEV2BLU\Projetos Pessoais\TesteBludata\scr\TesteBludata.Application.Service\obj\Debug\net6.0\TesteBludata.Application.Service.csproj.CoreCompileInputs.cache

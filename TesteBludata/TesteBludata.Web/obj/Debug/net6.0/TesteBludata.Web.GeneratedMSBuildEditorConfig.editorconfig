@@ -7,39 +7,63 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = TesteBludata.Web
-build_property.RootNamespace = TesteBludata.Web
-build_property.ProjectDir = C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.Web\
+build_property.RootNamespace = TesteBludata.web
+build_property.RootNamespace = TesteBludata.web
+build_property.ProjectDir = C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.Web
+build_property.MSBuildProjectDirectory = C:\DEV2BLU\Projetos Pessoais\TesteBludata\TesteBludata.web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.Web/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/Empresa/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.Web/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/Empresa/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.Web/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/Empresa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/Fornecedor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.Web/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/Fornecedor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.Web/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/Fornecedor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.Web/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-e9yko193ml
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV2BLU/Projetos Pessoais/TesteBludata/TesteBludata.web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cfbxt2jd68

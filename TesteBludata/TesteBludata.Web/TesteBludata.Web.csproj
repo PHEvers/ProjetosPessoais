@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
@@ -18,6 +14,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\scr\TesteBludata.Application.Service\TesteBludata.Application.Service.csproj" />
+    <ProjectReference Include="..\scr\TesteBludata.Domain\TesteBludata.Domain.csproj" />
+    <ProjectReference Include="..\scr\TesteDatablu.Infra.Data\TesteBludata.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>
