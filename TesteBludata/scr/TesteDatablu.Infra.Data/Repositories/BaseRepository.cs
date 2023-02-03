@@ -1,4 +1,4 @@
-﻿using RevisaoProjetoNoticias.Domain.IRepositories;
+﻿using TesteBludata.Domain.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,13 +20,13 @@ namespace TesteBludata.Infra.Data.Repositories
             this._context.Set<T>().Add(entity);
             return this._context.SaveChangesAsync();
         }
-        public IQueryable<T> ReadByAll()
-        {
-            return this._context.Set<T>();
-        }
         public async Task<T> ReadById(int id)
         {
             return await this._context.Set<T>().FindAsync(id);
+        }
+        public IQueryable<T> ReadAll()
+        {
+            return this._context.Set<T>(); ;
         }
         public Task<int> Update(T entity)
         {

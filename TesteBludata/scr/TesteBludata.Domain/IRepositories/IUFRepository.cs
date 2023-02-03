@@ -1,4 +1,4 @@
-﻿using RevisaoProjetoNoticias.Domain.IRepositories;
+﻿using TesteBludata.Domain.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

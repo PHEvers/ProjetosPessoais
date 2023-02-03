@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RevisaoProjetoNoticias.Domain.IRepositories;
+using TesteBludata.Domain.IRepositories;
 using TesteBludata.Domain.Entities;
 using TesteBludata.Domain.IRepositories;
 using TesteBludata.Domain.IService;
@@ -13,7 +13,7 @@ namespace TesteBludata.web.Controllers
         private readonly IUFService _service;
         public UFController(IUFService uFService)
         {
-            _UFService = uFService;
+            uFService = uFService;
         }
         public async Task<IActionResult> Index()
         {

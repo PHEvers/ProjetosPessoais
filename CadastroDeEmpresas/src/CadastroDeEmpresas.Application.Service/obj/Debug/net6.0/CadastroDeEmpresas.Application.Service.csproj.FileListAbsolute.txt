@@ -1,0 +1,15 @@
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\obj\Debug\net6.0\CadastroDeEmpresas.Application.Service.csproj.AssemblyReference.cache
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\obj\Debug\net6.0\CadastroDeEmpresas.Application.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\obj\Debug\net6.0\CadastroDeEmpresas.Application.Service.AssemblyInfoInputs.cache
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\obj\Debug\net6.0\CadastroDeEmpresas.Application.Service.AssemblyInfo.cs
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\obj\Debug\net6.0\CadastroDeEmpresas.Application.Service.csproj.CoreCompileInputs.cache
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\bin\Debug\net6.0\CadastroDeEmpresas.Application.Service.deps.json
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\bin\Debug\net6.0\CadastroDeEmpresas.Application.Service.dll
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\bin\Debug\net6.0\CadastroDeEmpresas.Application.Service.pdb
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\bin\Debug\net6.0\CadastroDeEmpresas.Domain.dll
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\bin\Debug\net6.0\CadastroDeEmpresas.Domain.pdb
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\obj\Debug\net6.0\CadastroDeEmpresas.Application.Service.csproj.CopyComplete
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\obj\Debug\net6.0\CadastroDeEmpresas.Application.Service.dll
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\obj\Debug\net6.0\refint\CadastroDeEmpresas.Application.Service.dll
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\obj\Debug\net6.0\CadastroDeEmpresas.Application.Service.pdb
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\src\CadastroDeEmpresas.Application.Service\obj\Debug\net6.0\ref\CadastroDeEmpresas.Application.Service.dll

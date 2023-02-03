@@ -1,4 +1,4 @@
-﻿using RevisaoProjetoNoticias.Domain.IRepositories;
+﻿using TesteBludata.Domain.IRepositories;
 using TesteBludata.Domain.Entities;
 using TesteBludata.Domain.IRrepositories;
 using TesteDatablu.Infra.Data.Context;

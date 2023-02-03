@@ -18,7 +18,28 @@ namespace TesteBludata.Domain.DTO
         [MinLength(3, ErrorMessage = "Title should bigger than 3 charactere")]
         public string nomeFantasia { get; set; }
         [Required(ErrorMessage = "digite apenas os numeros do CNPJ")]
-        [MinLength(14, ErrorMessage = "Title should bigger than 14 charactere")]
+        [MinLength(14, ErrorMessage = "Title should be than 15 charactere")]
+        [MaxLength(16, ErrorMessage = "Title should be than 15 charactere")]
         public string empesaCNPJ { get; set; }
+        public Empresa mapToEntity()
+        {
+
+            return new Empresa()
+            {
+                Id = id,
+                Uf = uF,
+                EmpesaCNPJ = empesaCNPJ
+            };
+        }
+        public EmpresaDTO mapToDTO(Empresa empresa)
+        {
+            return new EmpresaDTO()
+            {
+                id = empresa.Id,
+                uF = empresa.Uf,
+                empesaCNPJ = empresa.EmpesaCNPJ
+            };
+        }
     }
+    
 }
