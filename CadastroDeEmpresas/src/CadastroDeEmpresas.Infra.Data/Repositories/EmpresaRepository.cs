@@ -14,7 +14,6 @@ namespace CadastroDeEmpresas.Infra.Data.Repositories
         private readonly SQLServerContext _context;
         public EmpresaRepository(SQLServerContext context) : base(context)
         {
-            this._context = context;
         }
     }
 }

@@ -1,3 +1,11 @@
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.csproj.AssemblyReference.cache
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.AssemblyInfoInputs.cache
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.AssemblyInfo.cs
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.csproj.CoreCompileInputs.cache
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.RazorAssemblyInfo.cache
+C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.RazorAssemblyInfo.cs
 C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\bin\Debug\net6.0\appsettings.Development.json
 C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\bin\Debug\net6.0\appsettings.json
 C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\bin\Debug\net6.0\CadastroDeEmpresas.Web.staticwebassets.runtime.json
@@ -69,14 +77,6 @@ C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\bin\Debug
 C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\bin\Debug\net6.0\CadastroDeEmpresas.Application.Service.pdb
 C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\bin\Debug\net6.0\CadastroDeEmpresas.Domain.pdb
 C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\bin\Debug\net6.0\CadastroDeEmpresas.Infra.Data.pdb
-C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.csproj.AssemblyReference.cache
-C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.GeneratedMSBuildEditorConfig.editorconfig
-C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.AssemblyInfoInputs.cache
-C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.AssemblyInfo.cs
-C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.csproj.CoreCompileInputs.cache
-C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.RazorAssemblyInfo.cache
-C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\CadastroDeEmpresas.Web.RazorAssemblyInfo.cs
 C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\staticwebassets\msbuild.CadastroDeEmpresas.Web.Microsoft.AspNetCore.StaticWebAssets.props
 C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.CadastroDeEmpresas.Web.props
 C:\DEV2BLU\Projetos Pessoais\CadastroDeEmpresas\CadastroDeEmpresas.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CadastroDeEmpresas.Web.props

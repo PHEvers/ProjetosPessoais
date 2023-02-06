@@ -15,14 +15,6 @@ namespace CadastroDeEmpresas.Domain.DTO
         public int id { get; set; }
         public string nome { get; set; }
         public virtual ICollection<Empresa>? listaEmpresa { get; set; }
-        public UF mapToUF(UF uf)
-        {
-            return new UF
-            {
-                Id= uf.Id,
-                Nome= uf.Nome,
-            };
-        }
         public UFDTO mapToDTO(UF uf)
         {
             return new UFDTO

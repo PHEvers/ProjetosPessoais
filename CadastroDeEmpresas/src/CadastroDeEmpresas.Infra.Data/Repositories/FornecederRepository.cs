@@ -10,7 +10,6 @@ namespace CadastroDeEmpresas.Infra.Data.Repositories
         private readonly SQLServerContext _context;
         public FornecedorRepository(SQLServerContext context) : base(context)
         {
-            this._context = context;
         }
     }
 }

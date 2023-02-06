@@ -1,4 +1,5 @@
 ﻿using CadastroDeEmpresas.Domain.DTO;
+using CadastroDeEmpresas.Domain.IRrepositories;
 using CadastroDeEmpresas.Domain.IService;
 using System;
 using System.Collections.Generic;
@@ -10,22 +11,42 @@ namespace CadastroDeEmpresas.Application.Service.SQLServerServices
 {
     public class EmpresaService : IEmpresaService
     {
-        private readonly IEmpresaService _repositori;
-        public Task<int> Creat(EmpresaDTO entity)
+        private readonly IEmpresaRepository _repository;
+        public EmpresaService(IEmpresaRepository repository)
         {
-            throw new NotImplementedException();
+            _repository = repository;
         }
-        public Task<int> Delete(int id)
+        public Task<int> Save(EmpresaDTO entity)
         {
-            throw new NotImplementedException();
+            if (entity.id > 0)
+            {
+                return _repository.Update(entity.mapToEntity());
+            }
+            else
+            {
+                return _repository.Save(entity.mapToEntity());
+            }
         }
-        public List<EmpresaDTO> ReadAll()
+        public List<EmpresaDTO> FindAll()
         {
-            throw new NotImplementedException();
+            return _repository.FindAll()
+                  .Select(c => new EmpresaDTO()
+                  {
+                      id = c.Id,
+                      nomeFantasia = c.NomeFantasia
+                  }).ToList();
         }
-        public Task<EmpresaDTO> ReadById(int id)
+
+        public async Task<EmpresaDTO> FindById(int id)
         {
-            throw new NotImplementedException();
+            var dto = new EmpresaDTO();
+            return dto.mapToDTO(await _repository.FindById(id));
         }
+        public async Task<int> Delete(int id)
+        {
+            var entity = await _repository.FindById(id);
+            return await _repository.Delete(entity);
+        }
+
     }
 }

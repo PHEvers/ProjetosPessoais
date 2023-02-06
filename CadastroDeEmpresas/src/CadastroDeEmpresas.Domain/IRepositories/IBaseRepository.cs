@@ -8,9 +8,9 @@ namespace CadastroDeEmpresas.Domain.IRepositories
 {
     public interface IBaseRepository<T> where T : class
     {
-        Task<int> Create(T entity);
-        Task<T> ReadById(int id);
-        IQueryable<T> ReadAll();
+        Task<int> Save(T entity);
+        Task<T> FindById(int id);
+        IQueryable<T> FindAll();
         Task<int> Update(T entity);
         Task<int> Delete(T entity);
     }

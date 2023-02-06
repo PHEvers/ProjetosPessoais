@@ -28,7 +28,8 @@ namespace CadastroDeEmpresas.Domain.DTO
             {
                 Id = id,
                 Uf = uF,
-                EmpesaCNPJ = empesaCNPJ
+                EmpesaCNPJ = empesaCNPJ,
+                NomeFantasia = nomeFantasia,
             };
         }
         public EmpresaDTO mapToDTO(Empresa empresa)
@@ -37,7 +38,8 @@ namespace CadastroDeEmpresas.Domain.DTO
             {
                 id = empresa.Id,
                 uF = empresa.Uf,
-                empesaCNPJ = empresa.EmpesaCNPJ
+                empesaCNPJ = empresa.EmpesaCNPJ,
+                nomeFantasia = empresa.NomeFantasia,
             };
         }
     }

@@ -5,6 +5,7 @@ using CadastroDeEmpresas.Domain.IService;
 using CadastroDeEmpresas.Infra.Data.Repositories;
 using CadastroDeEmpresas.Infra.Data.Context;
 using CadastroDeEmpresas.Application.Service.SQLServerServices;
+using CadastroDeFornecedors.Application.Service.SQLServerServices;
 
 var builder = WebApplication.CreateBuilder(args);
 

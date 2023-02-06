@@ -15,16 +15,16 @@ namespace CadastroDeEmpresas.Infra.Data.Repositories
         {
             this._context = context;
         }
-        public Task<int> Create(T entity)
+        public Task<int> Save(T entity)
         {
             this._context.Set<T>().Add(entity);
             return this._context.SaveChangesAsync();
         }
-        public async Task<T> ReadById(int id)
+        public async Task<T> FindById(int id)
         {
             return await this._context.Set<T>().FindAsync(id);
         }
-        public IQueryable<T> ReadAll()
+        public IQueryable<T> FindAll()
         {
             return this._context.Set<T>(); ;
         }

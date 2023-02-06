@@ -16,24 +16,24 @@ namespace CadastroDeEmpresas.Application.Service.SQLServerServices
         {
             _repository = repository;
         }
-        public Task<int> Creat(UFDTO entity)
+        public Task<int> Save(UFDTO entity)
         {
             // Já foram criados todos os estados em namespace CadastroDeEmpresas.Infra.Data.Context
             throw new NotImplementedException();
         }
-        public List<UFDTO> ReadAll()
+        public List<UFDTO> FindAll()
         {
-            return _repository.ReadAll()
+            return _repository.FindAll()
                                .Select(c => new UFDTO()
                                {
                                    id = c.Id,
                                    nome = c.Nome
                                }).ToList();
         }
-        public async Task<UFDTO> ReadById(int id)
+        public async Task<UFDTO> FindById(int id)
         {
             var dto = new UFDTO();
-            return dto.mapToDTO(await _repository.ReadById(id));
+            return dto.mapToDTO(await _repository.FindById(id));
         }
         public Task<int> Delete(int id)
         {

@@ -37,7 +37,6 @@ namespace CadastroDeEmpresas.Infra.Data.Context
                 new { Id = 27, Nome = "DF" });
         }
         #region DBSets<Tables>
-
         public DbSet<UF> UF { get; set; }
         public DbSet<Fornecedor> Fornecedor { get; set; }
         public DbSet<Empresa> Empresa { get; set; }
