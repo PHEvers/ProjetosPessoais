@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Cadastros.Application.Service/1.0.0": {
+        "dependencies": {
+          "Cadastros.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Cadastros.Application.Service.dll": {}
+        }
+      },
+      "Cadastros.Domain/1.0.0": {
+        "runtime": {
+          "Cadastros.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cadastros.Application.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cadastros.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

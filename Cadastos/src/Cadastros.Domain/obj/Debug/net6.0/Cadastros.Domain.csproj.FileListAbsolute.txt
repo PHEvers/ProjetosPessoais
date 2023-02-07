@@ -1,0 +1,12 @@
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\bin\Debug\net6.0\Cadastros.Domain.deps.json
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\bin\Debug\net6.0\Cadastros.Domain.dll
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\bin\Debug\net6.0\Cadastros.Domain.pdb
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\obj\Debug\net6.0\Cadastros.Domain.csproj.AssemblyReference.cache
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\obj\Debug\net6.0\Cadastros.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\obj\Debug\net6.0\Cadastros.Domain.AssemblyInfoInputs.cache
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\obj\Debug\net6.0\Cadastros.Domain.AssemblyInfo.cs
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\obj\Debug\net6.0\Cadastros.Domain.csproj.CoreCompileInputs.cache
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\obj\Debug\net6.0\Cadastros.Domain.dll
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\obj\Debug\net6.0\refint\Cadastros.Domain.dll
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\obj\Debug\net6.0\Cadastros.Domain.pdb
+C:\DEV2BLU\Projetos Pessoais\Cadastos\src\Cadastros.Domain\obj\Debug\net6.0\ref\Cadastros.Domain.dll
