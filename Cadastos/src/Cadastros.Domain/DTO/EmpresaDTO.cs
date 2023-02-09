@@ -9,7 +9,7 @@ namespace Cadastros.Domain.DTO
         public string nomeFantasia { get; set; }
         public string cNPJ { get; set; }
         public int ufId { get; set; }
-        //public ICollection<int> idFornecedorList { get; set; }
+        public List<FornecedorDTO>? listaFornecedor { get; set; }
         public Empresa mapToEntity()
         {
             return new Empresa
@@ -17,7 +17,7 @@ namespace Cadastros.Domain.DTO
                 Id = this.id,
                 NomeFantasia = this.nomeFantasia,
                 CNPJ = this.cNPJ,
-                UFId = this.ufId
+                UFId = this.ufId,
             };
         }
         public EmpresaDTO mapToDTO(Empresa empresa)
@@ -27,7 +27,7 @@ namespace Cadastros.Domain.DTO
                 id = empresa.Id,
                 nomeFantasia = empresa.NomeFantasia,
                 cNPJ = empresa.CNPJ,
-                ufId = empresa.UFId
+                ufId = empresa.UFId,
             };
         }
     }

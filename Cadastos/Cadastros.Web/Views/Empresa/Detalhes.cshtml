@@ -3,3 +3,66 @@
 <h1>Detalhes</h1>
 <h4>Empresa</h4>
 
+<div class="row">
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+            <label asp-for="nomeFantasia">@Model.nomeFantasia</label>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+                <label asp-for="ufId">@Model.ufId</label>
+        </li>
+        <li class="list-group-item">
+                <label asp-for="cNPJ">@Model.cNPJ</label>
+        </li>
+        <li class="list-group-item">
+                <label asp-for="id">@Model.id</label>
+        </li>
+
+      </ul>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <a> Id </a>
+                </th>
+                <th>
+                    <a> Nome </a>
+                </th>
+                <th>
+                    <a> CPF_CNPJ </a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.listaFornecedor)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.id )
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.cpf_cnpj)
+                    </td>
+                    <td>
+                        <a class="btn btn-primary" asp-action="Detalhes" asp-route-id="@item.id">Detalhes</a> |
+                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.id">Editar</a> |
+                        <a class="btn btn-danger" href="#" onclick="deleteEmpresa(@item.id)">Deletar</a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

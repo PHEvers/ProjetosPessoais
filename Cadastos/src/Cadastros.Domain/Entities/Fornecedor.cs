@@ -6,9 +6,10 @@
         public int EmpresaId { get; set; }
         public string Nome { get; set; }
         public string CPF_CNPJ { get; set; }
-        public virtual string RG { get; set; }
+        public string RG { get; set; }
+
         //public DateTime DataCadastro { get; set; }
-        //public virtual DateTime DataDeNascimento { get; set; }
-        //public ICollection<Telefones> TelefonesList { get; set; }
+        //public DateTime DataDeNascimento { get; set; }
+        //public virtual ICollection<Telefones> TelefonesList { get; set; }
     }
 }

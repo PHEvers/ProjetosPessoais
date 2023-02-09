@@ -4,13 +4,14 @@ namespace Cadastros.Domain.DTO
 {
     public class FornecedorDTO
     {
+
         public int id { get; set; }
         public int empresaId { get; set; }
         public string nome { get; set; }
         public string cpf_cnpj { get; set; }
-        public virtual string rg { get; set; }
+        public string rg { get; set; }
         //public DateTime dataCadastro { get; set; }
-        //public virtual DateTime dataDeNascimento { get; set; }
+        //public DateTime dataDeNascimento { get; set; }
         //public ICollection<Telefones> telefoneList { get; set; }
         public Fornecedor mapToEntity()
         {

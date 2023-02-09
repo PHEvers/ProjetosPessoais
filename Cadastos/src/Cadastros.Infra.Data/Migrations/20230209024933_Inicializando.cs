@@ -7,7 +7,7 @@
 namespace Cadastros.Infra.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class teste2 : Migration
+    public partial class Inicializando : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -25,22 +25,6 @@ namespace Cadastros.Infra.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Empresa", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Fornecedors",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    EmpresaId = table.Column<int>(type: "int", nullable: false),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CPFCNPJ = table.Column<string>(name: "CPF_CNPJ", type: "nvarchar(max)", nullable: false),
-                    RG = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Fornecedors", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -68,6 +52,28 @@ namespace Cadastros.Infra.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_UF", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Fornecedors",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EmpresaId = table.Column<int>(type: "int", nullable: false),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CPFCNPJ = table.Column<string>(name: "CPF_CNPJ", type: "nvarchar(max)", nullable: false),
+                    RG = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Fornecedors", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Fornecedors_Empresa_EmpresaId",
+                        column: x => x.EmpresaId,
+                        principalTable: "Empresa",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
@@ -103,14 +109,16 @@ namespace Cadastros.Infra.Data.Migrations
                     { 26, "TO" },
                     { 27, "DF" }
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Fornecedors_EmpresaId",
+                table: "Fornecedors",
+                column: "EmpresaId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Empresa");
-
             migrationBuilder.DropTable(
                 name: "Fornecedors");
 
@@ -119,6 +127,9 @@ namespace Cadastros.Infra.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "UF");
+
+            migrationBuilder.DropTable(
+                name: "Empresa");
         }
     }
 }

@@ -2,15 +2,18 @@
 using Cadastros.Domain.Entities;
 using Cadastros.Domain.IRepositories;
 using Cadastros.Domain.IServices;
+using System.Collections.Generic;
 
 namespace Cadastros.Application.Service.SQLServerServices
 {
     public class FornecedorService : IFornecedorService
     {
         private readonly IFornecedorRepository _repository;
-        public FornecedorService(IFornecedorRepository repository)
+        private readonly IEmpresaRepository _empresaRepository;
+        public FornecedorService(IFornecedorRepository repository, IEmpresaRepository empresaRepository)
         {
             _repository = repository;
+            _empresaRepository = empresaRepository;
         }
         public Task<int> Save(FornecedorDTO entity)
         {
@@ -22,6 +25,11 @@ namespace Cadastros.Application.Service.SQLServerServices
             {
                 return _repository.Save(entity.mapToEntity());
             }
+        }
+        public async Task<int> Delete(int id)
+        {
+            var entity = await _repository.FindById(id);
+            return await _repository.Delete(entity);
         }
         public List<FornecedorDTO> FindAll()
         {
@@ -41,10 +49,20 @@ namespace Cadastros.Application.Service.SQLServerServices
             var dto = new FornecedorDTO();
             return dto.mapToDTO(await _repository.FindById(id));
         }
-        public async Task<int> Delete(int id)
+        public List<FornecedorDTO>? FindByEmpresaId(int empresaId)
         {
-            var entity = await _repository.FindById(id);
-            return await _repository.Delete(entity);
+            var dto = new List<FornecedorDTO>();
+            dto = _repository.FindByEmpresaId(empresaId)
+                                .Select(c => new FornecedorDTO()
+                                {
+                                    id = c.Id,
+                                    empresaId = c.EmpresaId,
+                                    nome = c.Nome,
+                                    cpf_cnpj = c.CPF_CNPJ,
+                                    rg = c.RG
+                                }).ToList();
+            return dto;
         }
     }
 }
+

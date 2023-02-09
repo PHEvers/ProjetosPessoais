@@ -11,11 +11,12 @@ namespace Cadastros.Web.Controllers
     {
         private readonly IEmpresaService _service;
         private readonly IUFServices _ufService;
-
-        public EmpresaController(IEmpresaService service, IUFServices uFServices)
+        private readonly IFornecedorService _fornecedorService;
+        public EmpresaController(IEmpresaService service, IUFServices uFServices, IFornecedorService fornecedorService)
         {
             _service = service;
             _ufService = uFServices;
+            _fornecedorService = fornecedorService;
         }
         public IActionResult Index()
         {
@@ -101,8 +102,8 @@ namespace Cadastros.Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["fornecedorId"] = new SelectList(_ufService.FindAll(), "id", "nome", "cpf_cnpj", "Select...");
             var empresa = await _service.FindById(id);
+            empresa.listaFornecedor = _fornecedorService.FindByEmpresaId(id);
             return View(empresa);
         }
 

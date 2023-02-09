@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Cadastros.Infra.Data.Migrations
 {
     [DbContext(typeof(SQLServerContext))]
-    [Migration("20230207020903_teste2")]
-    partial class teste2
+    [Migration("20230209024933_Inicializando")]
+    partial class Inicializando
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -72,6 +72,8 @@ namespace Cadastros.Infra.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EmpresaId");
 
                     b.ToTable("Fornecedors");
                 });
@@ -249,6 +251,20 @@ namespace Cadastros.Infra.Data.Migrations
                             Id = 27,
                             Nome = "DF"
                         });
+                });
+
+            modelBuilder.Entity("Cadastros.Domain.Entities.Fornecedor", b =>
+                {
+                    b.HasOne("Cadastros.Domain.Entities.Empresa", null)
+                        .WithMany("ListaFornecedor")
+                        .HasForeignKey("EmpresaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Cadastros.Domain.Entities.Empresa", b =>
+                {
+                    b.Navigation("ListaFornecedor");
                 });
 #pragma warning restore 612, 618
         }
