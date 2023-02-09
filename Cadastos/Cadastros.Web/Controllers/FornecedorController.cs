@@ -1,8 +1,8 @@
-﻿using Cadastros.Application.Service.SQLServerServices;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc;
 using Cadastros.Domain.DTO;
 using Cadastros.Domain.IServices;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+using Cadastros.Web.Models;
 
 namespace Cadastros.Web.Controllers
 {
@@ -15,9 +15,10 @@ namespace Cadastros.Web.Controllers
             _service = service;
             _empresaService = empresaService;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View(_service.FindAll());
+            var list = _service.FindAll();
+            return View(list);
         }
         public JsonResult ListJson()
         {
@@ -38,6 +39,35 @@ namespace Cadastros.Web.Controllers
             }
             ViewData["empresaId"] = new SelectList(_empresaService.FindAll(), "id", "nome", "Select...");
             return View(fornecedor);
+        }
+        [HttpPost]
+        public async Task<JsonResult> Delete(int? id)
+        {
+            var retDel = new ReturnJsonDel
+            {
+                status = "Success",
+                code = "200"
+            };
+            try
+            {
+                if (await _service.Delete(id ?? 0) <= 0)
+                {
+                    retDel = new ReturnJsonDel
+                    {
+                        status = "Error",
+                        code = "400"
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                retDel = new ReturnJsonDel
+                {
+                    status = ex.Message,
+                    code = "500"
+                };
+            }
+            return Json(retDel);
         }
     }
 }

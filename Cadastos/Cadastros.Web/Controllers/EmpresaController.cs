@@ -1,5 +1,4 @@
 ﻿using Cadastros.Domain.DTO;
-using Cadastros.Domain.Entities;
 using Cadastros.Domain.IServices;
 using Cadastros.Web.Models;
 using Microsoft.AspNetCore.Mvc;

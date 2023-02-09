@@ -70,9 +70,7 @@ namespace Cadastros.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EmpresaId");
-
-                    b.ToTable("Fornecedors");
+                    b.ToTable("Fornecedor");
                 });
 
             modelBuilder.Entity("Cadastros.Domain.Entities.Telefones", b =>
@@ -248,20 +246,6 @@ namespace Cadastros.Infra.Data.Migrations
                             Id = 27,
                             Nome = "DF"
                         });
-                });
-
-            modelBuilder.Entity("Cadastros.Domain.Entities.Fornecedor", b =>
-                {
-                    b.HasOne("Cadastros.Domain.Entities.Empresa", null)
-                        .WithMany("ListaFornecedor")
-                        .HasForeignKey("EmpresaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Cadastros.Domain.Entities.Empresa", b =>
-                {
-                    b.Navigation("ListaFornecedor");
                 });
 #pragma warning restore 612, 618
         }

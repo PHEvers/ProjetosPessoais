@@ -1,9 +1,9 @@
+using Microsoft.EntityFrameworkCore;
 using Cadastros.Application.Service.SQLServerServices;
 using Cadastros.Domain.IRepositories;
 using Cadastros.Domain.IServices;
 using Cadastros.Infra.Data.Context;
 using Cadastros.Infra.Data.Repositories;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 

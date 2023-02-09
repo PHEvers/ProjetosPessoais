@@ -1,8 +1,6 @@
 ﻿using Cadastros.Domain.DTO;
-using Cadastros.Domain.Entities;
 using Cadastros.Domain.IRepositories;
 using Cadastros.Domain.IServices;
-using System.Collections.Generic;
 
 namespace Cadastros.Application.Service.SQLServerServices
 {

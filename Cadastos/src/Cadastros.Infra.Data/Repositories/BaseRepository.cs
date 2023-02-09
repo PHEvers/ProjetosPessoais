@@ -9,7 +9,7 @@ namespace Cadastros.Infra.Data.Repositories
         private readonly SQLServerContext _context;
         public BaseRepository(SQLServerContext context)
         {
-            this._context = context;
+            _context = context;
         }
         public Task<int> Save(T entity)
         {
@@ -39,8 +39,8 @@ namespace Cadastros.Infra.Data.Repositories
         }
         public Task<int> Delete(T entity)
         {
-            this._context.Set<T>().Remove(entity);
-            return this._context.SaveChangesAsync();
+            _context.Set<T>().Remove(entity);
+            return _context.SaveChangesAsync();
         }
         public async Task<int> ExecuteCommand(string sqlCommand)
         {

@@ -1,12 +1,6 @@
-﻿using Cadastros.Domain.DTO;
-using Cadastros.Domain.Entities;
+﻿using Cadastros.Domain.Entities;
 using Cadastros.Domain.IRepositories;
 using Cadastros.Infra.Data.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cadastros.Infra.Data.Repositories
 {
@@ -20,7 +14,7 @@ namespace Cadastros.Infra.Data.Repositories
         }
         public IEnumerable<Fornecedor>? FindByEmpresaId(int empresaId)
         {
-            return _contextFornecedor.Fornecedors.Where(p => p.EmpresaId == empresaId);
+            return _contextFornecedor.Fornecedor.Where(p => p.EmpresaId == empresaId);
         }
     }
 }
