@@ -6,6 +6,6 @@
         public string NomeFantasia { get; set; }
         public string CNPJ { get; set; }
         public int UFId { get; set; }
-        //public List<Fornecedor> ListaFornecedor { get; set; }
+        public virtual List<Fornecedor>? ListaFornecedor { get; set; }
     }
 }

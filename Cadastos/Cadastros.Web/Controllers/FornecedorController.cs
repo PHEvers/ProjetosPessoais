@@ -30,7 +30,7 @@ namespace Cadastros.Web.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Create([Bind("id, empresaId, nome, cpf_cnpj, rg")] FornecedorDTO fornecedor)
+        public async Task<IActionResult> Create([Bind("id, empresaId, nome, cpf_cnpj, rg, telefone")] FornecedorDTO fornecedor)
         {
             if (ModelState.IsValid)
             {

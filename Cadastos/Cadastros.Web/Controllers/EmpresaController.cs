@@ -74,23 +74,12 @@ namespace Cadastros.Web.Controllers
                 status = "Success",
                 code = "200"
             };
-            try
-            {
-                if (await _service.Delete(id ?? 0) <= 0)
-                {
-                    retDel = new ReturnJsonDel
-                    {
-                        status = "Error",
-                        code = "400"
-                    };
-                };
-            }
-            catch (Exception ex)
+            if (await _service.Delete(id ?? 0) <= 0)
             {
                 retDel = new ReturnJsonDel
                 {
-                    status = ex.Message,
-                    code = "500"
+                    status = "Error",
+                    code = "400"
                 };
             }
             return Json(retDel);
