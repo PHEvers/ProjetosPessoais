@@ -34,6 +34,8 @@ namespace Cadastros.Infra.Data.Context
         public DbSet<Empresa> Empresa { get; set; }
         public DbSet<Fornecedor> Fornecedor { get; set; }
         public DbSet<UF> UF { get; set; }
+        public DbSet<Telefone> Telefones { get; set; }
+
         #endregion
     }
 }

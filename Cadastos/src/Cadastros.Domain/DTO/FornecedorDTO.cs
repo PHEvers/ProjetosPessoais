@@ -12,7 +12,7 @@ namespace Cadastros.Domain.DTO
         public string rg { get; set; }
         //public DateTime dataCadastro { get; set; }
         //public DateTime dataDeNascimento { get; set; }
-        public List<string>? telefoneList { get; set; }
+        public List<TelefoneDTO>? telefoneList { get; set; }
         public Fornecedor mapToEntity()
         {
             return new Fornecedor
@@ -22,7 +22,6 @@ namespace Cadastros.Domain.DTO
                 Nome = this.nome,
                 CPF_CNPJ = this.cpf_cnpj,
                 RG = this.rg,
-                TelefonesList= this.telefoneList,
             };
         }
         public FornecedorDTO mapToDTO(Fornecedor fornecedor)
@@ -34,7 +33,6 @@ namespace Cadastros.Domain.DTO
                 nome = fornecedor.Nome,
                 cpf_cnpj = fornecedor.CPF_CNPJ,
                 rg = fornecedor.RG,
-                telefoneList = fornecedor.TelefonesList
             };
         }
     }

@@ -10,6 +10,6 @@
 
         //public DateTime DataCadastro { get; set; }
         //public DateTime DataDeNascimento { get; set; }
-        public virtual List<string>? TelefonesList { get; set; }
+        public virtual List<Telefone>? TelefonesList { get; set; }
     }
 }

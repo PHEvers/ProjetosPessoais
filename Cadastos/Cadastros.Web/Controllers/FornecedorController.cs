@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Mvc;
-using Cadastros.Domain.DTO;
+﻿using Cadastros.Domain.DTO;
 using Cadastros.Domain.IServices;
 using Cadastros.Web.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Cadastros.Web.Controllers
 {
@@ -10,10 +10,12 @@ namespace Cadastros.Web.Controllers
     {
         private readonly IFornecedorService _service;
         private readonly IEmpresaService _empresaService;
-        public FornecedorController(IFornecedorService service, IEmpresaService empresaService)
+        private readonly ITelefoneServices _telefoneServices;
+        public FornecedorController(IFornecedorService service, IEmpresaService empresaService, ITelefoneServices telefoneServices)
         {
             _service = service;
             _empresaService = empresaService;
+            _telefoneServices = telefoneServices;
         }
         public async Task<IActionResult> Index()
         {
@@ -30,7 +32,7 @@ namespace Cadastros.Web.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Create([Bind("id, empresaId, nome, cpf_cnpj, rg, telefone")] FornecedorDTO fornecedor)
+        public async Task<IActionResult> Create([Bind("id, empresaId, nome, cpf_cnpj, rg")] FornecedorDTO fornecedor)
         {
             if (ModelState.IsValid)
             {
@@ -69,5 +71,10 @@ namespace Cadastros.Web.Controllers
             }
             return Json(retDel);
         }
+        /*         [HttpPost]
+               public async Task<JsonResult> AddTeledone(int? id)
+                {   
+
+                }*/
     }
 }
