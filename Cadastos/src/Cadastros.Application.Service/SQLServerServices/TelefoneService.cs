@@ -4,29 +4,27 @@ using Cadastros.Domain.IServices;
 
 namespace Cadastros.Application.Service.SQLServerServices
 {
-    public class TelefoneService : ITelefoneServices
+    public class TelefoneService : ITelefoneService
     {
-        private readonly ITelefoneRepository _repository;
-        private readonly IFornecedorRepository _fornecedorRepository;
+        private readonly ITelefoneRepository _telefoneRepository;
         public TelefoneService(ITelefoneRepository repository, IFornecedorRepository fornecedorRepository)
         {
-            _repository = repository;
-            _fornecedorRepository = fornecedorRepository;
+            _telefoneRepository = repository;
         }
         public Task<int> Save(TelefoneDTO entity)
         {
             if (entity.id > 0)
             {
-                return _repository.Update(entity.mapToEntity());
+                return _telefoneRepository.Update(entity.mapToEntity());
             }
             else
             {
-                return _repository.Save(entity.mapToEntity());
+                return _telefoneRepository.Save(entity.mapToEntity());
             }
         }
         public List<TelefoneDTO> FindAll()
         {
-            return _repository.FindAll()
+            return _telefoneRepository.FindAll()
                               .Select(c => new TelefoneDTO()
                               {
                                   id = c.Id,
@@ -37,12 +35,12 @@ namespace Cadastros.Application.Service.SQLServerServices
         public async Task<TelefoneDTO> FindById(int id)
         {
             var dto = new TelefoneDTO();
-            return dto.mapToDTO(await _repository.FindById(id));
+            return dto.mapToDTO(await _telefoneRepository.FindById(id));
         }
         public async Task<int> Delete(int id)
         {
-            var entity = await _repository.FindById(id);
-            return await _repository.Delete(entity);
+            var entity = await _telefoneRepository.FindById(id);
+            return await _telefoneRepository.Delete(entity);
         }
     }
 }

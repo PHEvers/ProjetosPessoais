@@ -8,10 +8,12 @@ namespace Cadastros.Application.Service.SQLServerServices
     {
         private readonly IFornecedorRepository _repository;
         private readonly IEmpresaRepository _empresaRepository;
-        public FornecedorService(IFornecedorRepository repository, IEmpresaRepository empresaRepository)
+        private readonly ITelefoneRepository _telefoneRepository;
+        public FornecedorService(IFornecedorRepository repository, IEmpresaRepository empresaRepository, ITelefoneRepository telefoneRepository)
         {
             _repository = repository;
             _empresaRepository = empresaRepository;
+            _telefoneRepository = telefoneRepository;
         }
         public Task<int> Save(FornecedorDTO entity)
         {
@@ -24,11 +26,6 @@ namespace Cadastros.Application.Service.SQLServerServices
                 return _repository.Save(entity.mapToEntity());
             }
         }
-        public async Task<int> Delete(int id)
-        {
-            var entity = await _repository.FindById(id);
-            return await _repository.Delete(entity);
-        }
         public List<FornecedorDTO> FindAll()
         {
             return _repository.FindAll()
@@ -39,13 +36,17 @@ namespace Cadastros.Application.Service.SQLServerServices
                       nome = c.Nome,
                       cpf_cnpj = c.CPF_CNPJ,
                       rg = c.RG
-
                   }).ToList();
         }
         public async Task<FornecedorDTO> FindById(int id)
         {
             var dto = new FornecedorDTO();
             return dto.mapToDTO(await _repository.FindById(id));
+        }
+        public async Task<int> Delete(int id)
+        {
+            var entity = await _repository.FindById(id);
+            return await _repository.Delete(entity);
         }
         public List<FornecedorDTO>? FindByEmpresaId(int empresaId)
         {

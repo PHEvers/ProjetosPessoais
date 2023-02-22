@@ -1,7 +1,7 @@
-﻿@model IEnumerable<Cadastros.Domain.DTO.FornecedorDTO>
+﻿@model IEnumerable<Cadastros.Domain.DTO.TelefoneDTO>
 
 <div class="text-center">
-    <h1 class="display-4">Menu de fornecedores</h1>
+    <h1 class="display-4">Menu de telefones</h1>
 </div>
 <p>
     <a class="btn btn-primary" asp-action="Create">Adicionar</a>
@@ -28,10 +28,10 @@
                     @Html.DisplayFor(modelItem => item.id )
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.nome)
+                    @Html.DisplayFor(modelItem => item.numero)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.empresaId)
+                    @Html.DisplayFor(modelItem => item.fornecedorId)
                 </td>
                 <td>
                     <a class="btn btn-primary" asp-action="Detalhes" asp-route-id="@item.id">Detalhes</a> |

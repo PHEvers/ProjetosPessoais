@@ -2,7 +2,7 @@
 
 namespace Cadastros.Domain.IServices
 {
-    public interface ITelefoneServices : IBaseService<TelefoneDTO>
+    public interface ITelefoneService : IBaseService<TelefoneDTO>
     {
     }
 }

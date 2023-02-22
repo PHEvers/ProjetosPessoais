@@ -19,11 +19,13 @@ builder.Services.AddDbContext<SQLServerContext>
 builder.Services.AddScoped<IEmpresaRepository, EmpresaRepository>();
 builder.Services.AddScoped<IFornecedorRepository, FornecedorRepository>();
 builder.Services.AddScoped<IUFRepository, UFRepository>();
+builder.Services.AddScoped<ITelefoneRepository, TelefoneRepository>();
 
 // # Services
 builder.Services.AddScoped<IEmpresaService, EmpresaService>();
 builder.Services.AddScoped<IFornecedorService, FornecedorService>();
 builder.Services.AddScoped<IUFServices, UFService>();
+builder.Services.AddScoped<ITelefoneService, TelefoneService>();
 
 var app = builder.Build();
 

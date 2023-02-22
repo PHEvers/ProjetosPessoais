@@ -8,23 +8,23 @@ namespace Cadastros.Web.Controllers
 {
     public class FornecedorController : Controller
     {
-        private readonly IFornecedorService _service;
+        private readonly IFornecedorService _fornecedorService;
         private readonly IEmpresaService _empresaService;
-        private readonly ITelefoneServices _telefoneServices;
-        public FornecedorController(IFornecedorService service, IEmpresaService empresaService, ITelefoneServices telefoneServices)
+        private readonly ITelefoneService _telefoneService;
+        public FornecedorController(IFornecedorService service, IEmpresaService empresaService, ITelefoneService telefoneService)
         {
-            _service = service;
+            _fornecedorService = service;
             _empresaService = empresaService;
-            _telefoneServices = telefoneServices;
+            _telefoneService = telefoneService;
         }
         public async Task<IActionResult> Index()
         {
-            var list = _service.FindAll();
+            var list = _fornecedorService.FindAll();
             return View(list);
         }
         public JsonResult ListJson()
         {
-            return Json(_service.FindAll());
+            return Json(_fornecedorService.FindAll());
         }
         public IActionResult Create()
         {
@@ -36,7 +36,7 @@ namespace Cadastros.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (await _service.Save(fornecedor) > 0)
+                if (await _fornecedorService.Save(fornecedor) > 0)
                     return RedirectToAction(nameof(Index));
             }
             ViewData["empresaId"] = new SelectList(_empresaService.FindAll(), "id", "nome", "Select...");
@@ -52,7 +52,7 @@ namespace Cadastros.Web.Controllers
             };
             try
             {
-                if (await _service.Delete(id ?? 0) <= 0)
+                if (await _fornecedorService.Delete(id ?? 0) <= 0)
                 {
                     retDel = new ReturnJsonDel
                     {
@@ -71,10 +71,6 @@ namespace Cadastros.Web.Controllers
             }
             return Json(retDel);
         }
-        /*         [HttpPost]
-               public async Task<JsonResult> AddTeledone(int? id)
-                {   
-
-                }*/
+        
     }
 }

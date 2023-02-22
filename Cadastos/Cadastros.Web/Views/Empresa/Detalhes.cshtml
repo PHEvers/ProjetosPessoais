@@ -5,23 +5,20 @@
 
 <div class="row">
 
-    <div class="card" style="width: 18rem;">
-      <div class="card-header">
-            <label asp-for="nomeFantasia">@Model.nomeFantasia</label>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-                <label asp-for="ufId">@Model.ufId</label>
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Nome Fantasia
+            <b>@Model.nomeFantasia</b>
         </li>
-        <li class="list-group-item">
-                <label asp-for="cNPJ">@Model.cNPJ</label>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Unidade Federal
+            <b>@Model.ufId</b>
         </li>
-        <li class="list-group-item">
-                <label asp-for="id">@Model.id</label>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            CNPJ
+            <b>@Model.cNPJ</b>
         </li>
-
-      </ul>
-    </div>
+    </ul>
     <table class="table">
         <thead>
             <tr>
