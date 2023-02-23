@@ -12,7 +12,7 @@ namespace Cadastros.Domain.DTO
         public string rg { get; set; }
         //public DateTime dataCadastro { get; set; }
         //public DateTime dataDeNascimento { get; set; }
-        public List<TelefoneDTO>? telefoneList { get; set; }
+        public IEnumerable<TelefoneDTO>? telefoneList { get; set; }
         public Fornecedor mapToEntity()
         {
             return new Fornecedor

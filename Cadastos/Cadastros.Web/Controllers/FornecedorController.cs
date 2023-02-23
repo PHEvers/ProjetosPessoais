@@ -1,4 +1,6 @@
-﻿using Cadastros.Domain.DTO;
+﻿using Cadastros.Application.Service.SQLServerServices;
+using Cadastros.Domain.DTO;
+using Cadastros.Domain.Entities;
 using Cadastros.Domain.IServices;
 using Cadastros.Web.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -71,6 +73,16 @@ namespace Cadastros.Web.Controllers
             }
             return Json(retDel);
         }
-        
+        public async Task<IActionResult> Detalhes(int id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var empresa = await _fornecedorService.FindById(id);
+           
+            empresa.telefoneList = _telefoneService.FindAll().Where(p => p.fornecedorId == id);
+            return View(empresa);
+        }
     }
 }
