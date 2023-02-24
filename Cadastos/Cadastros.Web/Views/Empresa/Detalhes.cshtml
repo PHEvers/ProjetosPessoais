@@ -20,8 +20,9 @@
             </li>
         </ul>
         <ul>
-            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@model.id">Editar</a> |
-            <a class="btn btn-danger" href="#" onclick="deleteEmpresa(@model.id)">Deletar</a>
+            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.id">Editar</a> |
+            <a class="btn btn-danger" onclick="deleteEmpresa(@Model.id)" asp-action="Index">Deletar</a>
+            @*<a class="nav-link text-light" asp-area="" asp-controller="Empresa" asp-action="Index">Empresa</a>*@
         </ul>
     </table>
     <table class="table">

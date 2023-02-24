@@ -1,4 +1,5 @@
 ﻿using Cadastros.Domain.DTO;
+using Cadastros.Domain.Entities;
 using Cadastros.Domain.IServices;
 using Cadastros.Web.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -67,7 +68,7 @@ namespace Cadastros.Web.Controllers
             return View(empresa);
         }
         [HttpPost]
-        public async Task<JsonResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             var retDel = new ReturnJsonDel
             {
@@ -82,7 +83,7 @@ namespace Cadastros.Web.Controllers
                     code = "400"
                 };
             }
-            return Json(retDel);
+            return View();
         }
         public async Task<IActionResult> Detalhes(int id)
         {
