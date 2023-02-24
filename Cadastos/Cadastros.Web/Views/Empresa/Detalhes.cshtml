@@ -21,8 +21,6 @@
         </ul>
         <ul>
             <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.id">Editar</a> |
-            <a class="btn btn-danger" onclick="deleteEmpresa(@Model.id)" asp-action="Index">Deletar</a>
-            @*<a class="nav-link text-light" asp-area="" asp-controller="Empresa" asp-action="Index">Empresa</a>*@
         </ul>
     </table>
     <table class="table">
@@ -69,7 +67,6 @@
 </div>
 
 @section Scripts {
-    
     <script>
         const deleteEmpresa = (idParam) => {
             msgModalMessage(`Deseja realmente excluir o registro ${idParam}?`, () => {
@@ -89,5 +86,6 @@
                 closeMsgModalMessage();
             });
         }
+        setTimeout(() => { window.location.href = '@Url.Action("Index")'; }, 4000);
     </script>
 }
