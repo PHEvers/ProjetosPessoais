@@ -39,9 +39,7 @@
                     @Html.DisplayFor(modelItem => item.ufId)
                 </td>
                 <td>
-                    <a class="btn btn-primary" asp-action="Detalhes" asp-route-id="@item.id">Detalhes</a> |
-                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.id">Editar</a> |
-                    <a class="btn btn-danger" href="#" onclick="deleteEmpresa(@item.id)">Deletar</a>
+                    <a class="btn btn-primary" asp-action="Detalhes" asp-route-id="@item.id">Detalhes</a>
                 </td>
             </tr>
         }

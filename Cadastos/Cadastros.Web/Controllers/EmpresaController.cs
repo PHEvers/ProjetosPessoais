@@ -62,7 +62,7 @@ namespace Cadastros.Web.Controllers
             if (ModelState.IsValid)
             {
                 if (await _service.Save(empresa) > 0)
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Detalhes), new { id = empresa.id} );
             }
             ViewData["ufId"] = new SelectList(_ufService.FindAll(), "id", "nome", "Select...");
             return View(empresa);

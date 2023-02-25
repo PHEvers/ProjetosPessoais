@@ -5,23 +5,30 @@
 
 <div class="row">
     <table>
-        <ul class="list-group width=" 60%"">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                Nome Fantasia
-                <b>@Model.nomeFantasia</b>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                Unidade Federal
-                <b>@Model.ufId</b>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                CNPJ
-                <b>@Model.cNPJ</b>
-            </li>
-        </ul>
-        <ul>
-            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.id">Editar</a> |
-        </ul>
+        <td width="40%">
+            <ul class="list-group" >
+                <label asp-for="nomeFantasia">Nome Fantasia</label>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <b>@Model.nomeFantasia</b>
+                </li>
+                <label asp-for="ufId">Unidade Federal</label>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <b>@Model.ufId</b>
+                </li>
+                <label asp-for="ufId">Unidade Federal</label>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <b>@Model.cNPJ</b>
+                </li>
+            </ul>
+        </td>
+        <td width="60%">
+            <ul>
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.id">Editar</a>
+            </ul>
+            <ul>
+                <a class="btn btn-danger" onclick="deleteEmpresa(@Model.id)">Deletar</a>
+            </ul>
+        </td>
     </table>
     <table class="table">
         <thead>
@@ -54,9 +61,7 @@
                         @Html.DisplayFor(modelItem => item.cpf_cnpj)
                     </td>
                     <td>
-                        <a class="btn btn-primary" asp-controller="Fornecedor" asp-action="Detalhes" asp-route-id="@item.id" >Detalhes</a> |
-                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.id">Editar</a> |
-                        <a class="btn btn-danger" href="#" onclick="deleteEmpresa(@item.id)">Deletar</a>
+                        <a class="btn btn-primary" asp-controller="Fornecedor" asp-action="Detalhes" asp-route-id="@item.id" >Detalhes</a>
                     </td>
                 </tr>
             }
@@ -65,27 +70,29 @@
     </table>
 
 </div>
-
 @section Scripts {
-    <script>
-        const deleteEmpresa = (idParam) => {
-            msgModalMessage(`Deseja realmente excluir o registro ${idParam}?`, () => {
-                $.ajax({
-                    url: `@Url.Action("Delete")`,
-                    method: 'POST',
-                    data: {
-                        id: idParam
-                    },
-                    success: (resp) => {
-                        if (resp.code == '200') {
-                            liveToastMessage(`O Registro ${idParam} foi excluído.`, 'Empresa');
-                            setTimeout(() => { window.location.reload(); }, 4000);
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        <script>
+            const deleteEmpresa = (idParam) => {
+                msgModalMessage(`Deseja realmente excluir o registro ${idParam}?`, () => {
+                    $.ajax({
+                        url: `@Url.Action("Delete")`,
+                        method: 'POST',
+                        data: {
+                            id: idParam
+                        },
+                        success: (resp) => {
+                            if (resp.code == '200') {
+                                liveToastMessage(`O Registro ${idParam} foi excluído.`, 'Empresa');
+                                setTimeout(() => { window.location.reload(); }, 4000);
+                            }
                         }
-                    }
+                    });
+                    closeMsgModalMessage();
+                    setTimeout(() => { window.location.href = '@Url.Action("Index")'; }, 1000);
                 });
-                closeMsgModalMessage();
-            });
-        }
-        setTimeout(() => { window.location.href = '@Url.Action("Index")'; }, 4000);
-    </script>
+            }
+        </script>
+    }
 }
