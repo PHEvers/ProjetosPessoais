@@ -95,6 +95,5 @@ namespace Cadastros.Web.Controllers
             empresa.listaFornecedor = _fornecedorService.FindByEmpresaId(id);
             return View(empresa);
         }
-
     }
 }

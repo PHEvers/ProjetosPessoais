@@ -1,0 +1,269 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Web\\CadastroDePessoas.Web.csproj": {}
+  },
+  "projects": {
+    "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Application.Service\\CadastroDePessoas.Application.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Application.Service\\CadastroDePessoas.Application.Service.csproj",
+        "projectName": "CadastroDePessoas.Application.Service",
+        "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Application.Service\\CadastroDePessoas.Application.Service.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Application.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Domain\\CadastroDePessoas.Domain.csproj": {
+                "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Domain\\CadastroDePessoas.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Domain\\CadastroDePessoas.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Domain\\CadastroDePessoas.Domain.csproj",
+        "projectName": "CadastroDePessoas.Domain",
+        "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Domain\\CadastroDePessoas.Domain.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Infra.Data\\CadastroDePessoas.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Infra.Data\\CadastroDePessoas.Infra.Data.csproj",
+        "projectName": "CadastroDePessoas.Infra.Data",
+        "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Infra.Data\\CadastroDePessoas.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Domain\\CadastroDePessoas.Domain.csproj": {
+                "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Domain\\CadastroDePessoas.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Web\\CadastroDePessoas.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Web\\CadastroDePessoas.Web.csproj",
+        "projectName": "CadastroDePessoas.Web",
+        "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Web\\CadastroDePessoas.Web.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Application.Service\\CadastroDePessoas.Application.Service.csproj": {
+                "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Application.Service\\CadastroDePessoas.Application.Service.csproj"
+              },
+              "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Domain\\CadastroDePessoas.Domain.csproj": {
+                "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Domain\\CadastroDePessoas.Domain.csproj"
+              },
+              "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Infra.Data\\CadastroDePessoas.Infra.Data.csproj": {
+                "projectPath": "C:\\DEV2BLU\\Projetos Pessoais\\CadastroDePessoas\\src\\CadastroDePessoas.Infra.Data\\CadastroDePessoas.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

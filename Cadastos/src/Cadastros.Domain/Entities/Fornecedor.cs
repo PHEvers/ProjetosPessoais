@@ -5,11 +5,11 @@
         public int Id { get; set; }
         public int EmpresaId { get; set; }
         public string Nome { get; set; }
+        public bool PF { get; set; }
         public string CPF_CNPJ { get; set; }
-        public string RG { get; set; }
-
-        //public DateTime DataCadastro { get; set; }
-        //public DateTime DataDeNascimento { get; set; }
+        public DateTime DataCadastro { get; set; }
+        public virtual string? RG { get; set; }
+        public virtual DateTime? DataDeNascimento { get; set; }
         public virtual List<Telefone>? TelefonesList { get; set; }
     }
 }

@@ -35,7 +35,9 @@ namespace Cadastros.Application.Service.SQLServerServices
                       empresaId = c.EmpresaId,
                       nome = c.Nome,
                       cpf_cnpj = c.CPF_CNPJ,
-                      rg = c.RG
+                      rg = c.RG,
+                      dataDeNascimento = c.DataDeNascimento,
+                      dataCadastro = c.DataCadastro,
                   }).ToList();
         }
         public async Task<FornecedorDTO> FindById(int id)
@@ -58,7 +60,9 @@ namespace Cadastros.Application.Service.SQLServerServices
                                     empresaId = c.EmpresaId,
                                     nome = c.Nome,
                                     cpf_cnpj = c.CPF_CNPJ,
-                                    rg = c.RG
+                                    rg = c.RG,
+                                    dataDeNascimento = c.DataDeNascimento,
+                                    dataCadastro= c.DataCadastro,
                                 }).ToList();
             return dto;
         }
