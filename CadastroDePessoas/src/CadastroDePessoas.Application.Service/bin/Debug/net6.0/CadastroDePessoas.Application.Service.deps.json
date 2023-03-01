@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CadastroDePessoas.Application.Service/1.0.0": {
+        "dependencies": {
+          "CadastroDePessoas.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CadastroDePessoas.Application.Service.dll": {}
+        }
+      },
+      "CadastroDePessoas.Domain/1.0.0": {
+        "runtime": {
+          "CadastroDePessoas.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CadastroDePessoas.Application.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CadastroDePessoas.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

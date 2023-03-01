@@ -1,9 +1,4 @@
 ﻿using CadastroDePessoas.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CadastroDePessoas.Domain.DTO
 {
@@ -21,9 +16,9 @@ namespace CadastroDePessoas.Domain.DTO
             {
                 Id = id,
                 Nome = this.nome,
-                CPF= this.cpf,
+                CPF = this.cpf,
                 Cidade = this.cidade,
-                DataNascimento= dataNascimento
+                DataNascimento = dataNascimento
             };
         }
         public PessoaDTO mapToDTO(Pessoa pessoa)
@@ -33,7 +28,7 @@ namespace CadastroDePessoas.Domain.DTO
                 id = pessoa.Id,
                 nome = pessoa.Nome,
                 cpf = pessoa.CPF,
-                cidade= pessoa.Cidade,
+                cidade = pessoa.Cidade,
                 dataNascimento = pessoa.DataNascimento
             };
         }

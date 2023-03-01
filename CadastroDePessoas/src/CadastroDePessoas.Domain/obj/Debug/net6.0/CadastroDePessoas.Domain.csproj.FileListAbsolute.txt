@@ -1,0 +1,12 @@
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\bin\Debug\net6.0\CadastroDePessoas.Domain.deps.json
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\bin\Debug\net6.0\CadastroDePessoas.Domain.dll
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\bin\Debug\net6.0\CadastroDePessoas.Domain.pdb
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\obj\Debug\net6.0\CadastroDePessoas.Domain.csproj.AssemblyReference.cache
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\obj\Debug\net6.0\CadastroDePessoas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\obj\Debug\net6.0\CadastroDePessoas.Domain.AssemblyInfoInputs.cache
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\obj\Debug\net6.0\CadastroDePessoas.Domain.AssemblyInfo.cs
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\obj\Debug\net6.0\CadastroDePessoas.Domain.csproj.CoreCompileInputs.cache
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\obj\Debug\net6.0\CadastroDePessoas.Domain.dll
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\obj\Debug\net6.0\refint\CadastroDePessoas.Domain.dll
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\obj\Debug\net6.0\CadastroDePessoas.Domain.pdb
+C:\DEV2BLU\Projetos Pessoais\CadastroDePessoas\src\CadastroDePessoas.Domain\obj\Debug\net6.0\ref\CadastroDePessoas.Domain.dll
