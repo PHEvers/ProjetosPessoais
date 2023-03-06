@@ -71,8 +71,10 @@ namespace Cadastros.Infra.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("PessoaFisica")
+                        .HasColumnType("bit");
+
                     b.Property<string>("RG")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

@@ -8,6 +8,7 @@ namespace Cadastros.Domain.DTO
         public string nomeFantasia { get; set; }
         public string cNPJ { get; set; }
         public int ufId { get; set; }
+        public UFDTO? ufDTO { get; set; }
         public List<FornecedorDTO>? listaFornecedor { get; set; }
         public Empresa mapToEntity()
         {

@@ -5,7 +5,7 @@
         public int Id { get; set; }
         public int EmpresaId { get; set; }
         public string Nome { get; set; }
-        public bool PF { get; set; }
+        public bool PessoaFisica { get; set; }
         public string CPF_CNPJ { get; set; }
         public DateTime DataCadastro { get; set; }
         public virtual string? RG { get; set; }

@@ -7,7 +7,7 @@ namespace Cadastros.Domain.DTO
         public int id { get; set; }
         public int empresaId { get; set; }
         public string nome { get; set; }
-        public bool pf { get; set; }
+        public bool pessoaFisica { get; set; }
         public string cpf_cnpj { get; set; }
         public DateTime dataCadastro { get; set; }
         public virtual string? rg { get; set; }
@@ -19,7 +19,7 @@ namespace Cadastros.Domain.DTO
             {
                 Id = this.id,
                 EmpresaId = this.empresaId,
-                PF = this.pf,
+                PessoaFisica= this.pessoaFisica,
                 Nome = this.nome,
                 CPF_CNPJ = this.cpf_cnpj,
                 RG = this.rg,
@@ -34,7 +34,7 @@ namespace Cadastros.Domain.DTO
                 id = fornecedor.Id,
                 empresaId = fornecedor.EmpresaId,
                 nome = fornecedor.Nome,
-                pf = fornecedor.PF,
+                pessoaFisica= fornecedor.PessoaFisica,
                 cpf_cnpj = fornecedor.CPF_CNPJ,
                 rg = fornecedor.RG,
                 dataCadastro = fornecedor.DataCadastro,

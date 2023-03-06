@@ -7,9 +7,11 @@ namespace Cadastros.Application.Service.SQLServerServices
     public class EmpresaService : IEmpresaService
     {
         private readonly IEmpresaRepository _repository;
-        public EmpresaService(IEmpresaRepository repository)
+        private readonly IUFRepository _UFRepository;
+        public EmpresaService(IEmpresaRepository repository, IUFRepository uFRepository)
         {
             _repository = repository;
+            _UFRepository = uFRepository;
         }
         public Task<int> Save(EmpresaDTO entity)
         {
@@ -25,7 +27,7 @@ namespace Cadastros.Application.Service.SQLServerServices
         public List<EmpresaDTO> FindAll()
         {
             return _repository.FindAll()
-                  .Select(c => new EmpresaDTO()
+                  .Select( c => new EmpresaDTO()
                   {
                       id = c.Id,
                       nomeFantasia = c.NomeFantasia,
@@ -36,7 +38,11 @@ namespace Cadastros.Application.Service.SQLServerServices
         public async Task<EmpresaDTO> FindById(int id)
         {
             var dto = new EmpresaDTO();
-            return dto.mapToDTO(await _repository.FindById(id));
+            dto.mapToDTO(await _repository.FindById(id));
+            var ufdto = new UFDTO();
+            ufdto.mapToDTO(await _UFRepository.FindById(dto.ufId));
+            dto.ufDTO = ufdto;
+            return dto;
         }
         public async Task<int> Delete(int id)
         {
